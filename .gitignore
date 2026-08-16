@@ -1,0 +1,20 @@
+# ==========================================
+# Git Ignore Rules for R & Shiny Projects
+# ==========================================
+
+# R Environment & History Files
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+
+# RStudio Project Files
+.Rproj.user/
+*.Rproj
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Package build artifacts
+/*.tar.gz
