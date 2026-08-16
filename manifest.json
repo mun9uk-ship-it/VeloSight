@@ -8,22 +8,28 @@
   },
   "packages": {
     "shiny": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     },
     "bslib": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     },
     "ggplot2": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     },
     "plotly": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     },
     "DT": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     },
     "bsicons": {
-      "Source": "CRAN"
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com"
     }
   },
   "files": {
