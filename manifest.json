@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.3.0",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "app.R"
+  },
+  "packages": {
+    "shiny": {
+      "Source": "CRAN"
+    },
+    "bslib": {
+      "Source": "CRAN"
+    },
+    "ggplot2": {
+      "Source": "CRAN"
+    },
+    "plotly": {
+      "Source": "CRAN"
+    },
+    "DT": {
+      "Source": "CRAN"
+    },
+    "bsicons": {
+      "Source": "CRAN"
+    }
+  },
+  "files": {
+    "app.R": {
+      "checksum": ""
+    }
+  }
+}
