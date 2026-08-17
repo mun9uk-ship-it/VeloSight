@@ -9,27 +9,51 @@
   "packages": {
     "shiny": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "shiny",
+        "Version": "1.8.1"
+      }
     },
     "bslib": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "bslib",
+        "Version": "0.6.1"
+      }
     },
     "ggplot2": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "ggplot2",
+        "Version": "3.4.4"
+      }
     },
     "plotly": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "plotly",
+        "Version": "4.10.4"
+      }
     },
     "DT": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "DT",
+        "Version": "0.31"
+      }
     },
     "bsicons": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest"
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "bsicons",
+        "Version": "0.2.2"
+      }
     }
   },
   "files": {
