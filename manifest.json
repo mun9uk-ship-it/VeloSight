@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.3.0",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "app.R"
+  },
+  "packages": {
+    "shiny": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    },
+    "bslib": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    },
+    "ggplot2": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    },
+    "plotly": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    },
+    "DT": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    },
+    "bsicons": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest"
+    }
+  },
+  "files": {
+    "app.R": {
+      "checksum": ""
+    }
+  }
+}
