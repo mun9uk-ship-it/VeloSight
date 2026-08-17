@@ -52,7 +52,7 @@
       "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "bsicons",
-        "Version": "0.2.2"
+        "Version": "0.1.0"
       }
     }
   },
