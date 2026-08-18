@@ -1,261 +1,323 @@
-<div align="center">
+# 🚀 VeloSight — Universal Interactive Data Explorer
 
-# 🚀 VeloSight
+[![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)](https://www.r-project.org/)
+[![Shiny](https://img.shields.io/badge/Shiny-1.8.0-brightgreen?logo=r)](https://shiny.rstudio.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)](https://github.com/mun9uk-ship-it/VeloSight)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?logo=posit)](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)
 
-### An Interactive R Shiny Data Dashboard
-
-[![Shiny](https://img.shields.io/badge/Shiny-Live%20App-blue?style=for-the-badge&logo=rstudio&logoColor=white)](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)
-[![R](https://img.shields.io/badge/R-4.3%2B-276DC3?style=for-the-badge&logo=r&logoColor=white)](https://www.r-project.org/)
-[![Posit Connect Cloud](https://img.shields.io/badge/Deployed%20on-Posit%20Connect%20Cloud-447099?style=for-the-badge&logo=posit&logoColor=white)](https://connect.posit.cloud/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-
-[![GitHub last commit](https://img.shields.io/github/last-commit/mun9uk-ship-it/VeloSight?style=flat-square)](https://github.com/mun9uk-ship-it/VeloSight/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/mun9uk-ship-it/VeloSight?style=flat-square)](https://github.com/mun9uk-ship-it/VeloSight)
-[![GitHub issues](https://img.shields.io/github/issues/mun9uk-ship-it/VeloSight?style=flat-square)](https://github.com/mun9uk-ship-it/VeloSight/issues)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0000--0000--0000-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0000-0000-0000)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue?style=flat-square&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.XXXXXXX)
-
-**[🌐 Try the Live Demo](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)** • **[📂 View Source Code](https://github.com/mun9uk-ship-it/VeloSight)**
-
-</div>
+> **Upload, explore, and visualize any dataset instantly — no coding required.**  
+> *Built with R Shiny for researchers, analysts, and data enthusiasts.*
 
 ---
 
-<div align="center">
+## 🔭 What is VeloSight?
 
-<!-- 📸 Replace this with an actual screenshot: upload your image to a `docs/` or `assets/` folder in the repo and update the path below -->
-<img src="docs/screenshot.png" alt="VeloSight Dashboard Screenshot" width="90%">
+**VeloSight** is an interactive web application that turns raw CSV files into actionable insights. It empowers you to:
 
-</div>
+- 📤 **Upload** any CSV file or instantly explore the built-in demo dataset (`mtcars`).
+- 🔍 **Inspect** data quality with a detailed, per-column report.
+- 🧹 **Clean** missing values with one click (remove rows or impute with mean/mode).
+- 🎚️ **Filter** data dynamically using intuitive sliders and checkboxes.
+- 📊 **Visualize** relationships with an interactive, hover-enabled scatter plot.
+- 📋 **Export** the cleaned or original dataset with a single click.
+
+> Perfect for data analysts, students, and professionals who want to understand their data quickly and without writing code.
 
 ---
 
-## 🌍 Language / اللغة
-
-**[English](#-english)** | **[العربية](#-العربية)**
-
----
-
-# 🇬🇧 English
-
-## 📖 Overview
-
-**VeloSight** is a modern, interactive data dashboard built with **R Shiny**. It lets users explore the classic `mtcars` dataset through dynamic filters, a live scatter plot, KPI summary cards, and a searchable data table — all wrapped in a sleek dark theme powered by `bslib`.
-
-This project is designed as a lightweight, easy-to-deploy template for anyone getting started with interactive R dashboards on **Posit Connect Cloud**.
-
-## ✨ Features
+## ✨ Key Features
 
 | Feature | Description |
-|---|---|
-| 🎚️ **Dynamic Filters** | Filter cars by horsepower range and number of cylinders |
-| 📊 **Interactive Plot** | Hover-enabled scatter plot (via `plotly`) of MPG vs. Weight |
-| 🚗 **KPI Cards** | Live-updating "Total Selected Cars" and "Average Horsepower" metrics |
-| 📋 **Data Table** | Sortable, paginated table (via `DT`) of the filtered dataset |
-| 🌙 **Modern Dark UI** | Built with `bslib`'s "darkly" Bootswatch theme |
+| :--- | :--- |
+| 📂 **Instant Upload & Demo** | Upload a CSV file or start exploring the built-in `mtcars` dataset immediately. |
+| 🧹 **Smart Cleaning** | Handle missing values by removing rows or imputing numeric (mean) and text (mode) values. |
+| 🎚️ **Dynamic Filtering** | Filter your data using sliders for numbers and checkboxes for categories. |
+| 📊 **Interactive Plot** | Create a fully interactive scatter plot. Hover over points for details, and color by any category column. |
+| 📋 **Data Table** | View, search, and paginate through your filtered data. |
+| 🔍 **Quality Report** | Get a comprehensive report on column types, missing values, unique counts, and duplicate rows. |
+| 📥 **Export** | Download the original or the cleaned/filtered dataset as a CSV file. |
 
-## 🔴 Live Demo
+---
 
-Try VeloSight directly in your browser — no installation required:
+## 🖥️ How to Use VeloSight
 
-### 👉 **[Launch VeloSight](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)**
+### **Try the Live Demo**
 
-## 🖥️ How to Use It
+The quickest way to experience VeloSight is to visit the live instance:
 
-1. Open the [live demo link](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/) above.
-2. Use the **sidebar controls** on the left to:
-   - Drag the **Horsepower Range** slider to filter cars by horsepower.
-   - Check/uncheck the **Cylinders** boxes (4, 6, 8) to include or exclude car types.
-3. Watch the **KPI cards** at the top update instantly with the filtered totals.
-4. **Hover over points** on the scatter plot to see car details.
-5. Use the **Data Table** on the right to sort columns or page through results.
+🔗 **[Live VeloSight Demo](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)**
 
-## ⚙️ How to Run It Locally
+Once there, you can:
 
-### Prerequisites
-- [R](https://cran.r-project.org/) (version 4.3 or later)
-- [RStudio](https://posit.co/download/rstudio-desktop/) (recommended) or [Posit Cloud](https://posit.cloud/) (browser-based, no install needed)
+1.  **Explore the Demo**: The app loads with the `mtcars` dataset. Play with the filters, charts, and tabs to see how it works.
+2.  **Upload Your Own File**: Click the **"Upload CSV File"** button in the sidebar. The app will instantly switch to your data.
+3.  **Clean Your Data**: Use the **"Data Cleaning"** options to handle missing values:
+    - *Keep as is*: Do nothing.
+    - *Remove rows with missing values*: Delete any row containing an `NA`.
+    - *Fill numeric = mean, text = mode*: Impute missing values automatically.
+4.  **Apply Filters**: Use the **"Dynamic Filters"** section to:
+    - Drag sliders to filter numeric columns (e.g., show only rows where `mpg` is between 15 and 25).
+    - Tick checkboxes to filter categorical columns (e.g., show only rows where `cyl` is 4 or 6).
+5.  **Visualize**: Go to the **"Dashboard"** tab:
+    - Select **X Axis**, **Y Axis**, and **Color By** columns from the dropdowns.
+    - Hover over points on the interactive plot to see details.
+    - Scroll through the **Data Table** below the plot.
+6.  **Explore Quality**: Switch to the **"Data Quality Report"** tab to see:
+    - Column types, missing counts, and unique values.
+    - Number of duplicate rows.
+    - Summary statistics (mean, median, min, max, etc.).
+7.  **Export**: Use the **"Download Original File"** button in the sidebar to save the untouched dataset, or copy data directly from the table.
 
-### Steps
+### **Run Locally (for Developers)**
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/mun9uk-ship-it/VeloSight.git
-cd VeloSight
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mun9uk-ship-it/VeloSight.git
+    cd VeloSight
+    ```
 
-```r
-# 2. Install required R packages
-install.packages(c("shiny", "bslib", "ggplot2", "plotly", "DT", "bsicons"))
+2.  **Install required packages in R:**
+    ```r
+    install.packages(c("shiny", "bslib", "ggplot2", "plotly", "DT", "bsicons"))
+    ```
 
-# 3. Run the app
-shiny::runApp()
-```
+3.  **Run the app:**
+    ```r
+    shiny::runApp("app.R")
+    ```
 
-The app will automatically open in your default browser at `http://127.0.0.1:PORT`.
+---
 
-### 🚀 Deploying Your Own Copy to Posit Connect Cloud
+## 🌐 What Can You Use VeloSight For?
 
-```r
-install.packages("rsconnect")
-rsconnect::writeManifest()
-```
+VeloSight is a versatile tool for any scenario where you need to quickly understand a dataset:
 
-Then commit and push the generated `manifest.json` to your GitHub repository, and connect it via **[Posit Connect Cloud](https://connect.posit.cloud/) → Publish → From GitHub**.
+| Use Case | Example |
+| :--- | :--- |
+| **🧪 Research & Academia** | Exploratory data analysis for student projects or research papers. |
+| **📊 Business Analytics** | Upload sales, customer, or operational data to spot trends and outliers. |
+| **📈 Data Journalism** | Quickly explore public datasets to find interesting stories. |
+| **🎓 Teaching & Learning** | Demonstrate data cleaning, filtering, and visualization concepts in the classroom. |
+| **🔍 Personal Projects** | Analyze your own data (e.g., fitness logs, budget tracking) without writing a single line of code. |
+| **💼 Client Presentations** | Use the interactive dashboard to walk stakeholders through data insights during meetings. |
 
-## 🛠️ Tech Stack
+---
 
-- **[R](https://www.r-project.org/)** — core language
-- **[Shiny](https://shiny.posit.co/)** — reactive web framework
-- **[bslib](https://rstudio.github.io/bslib/)** — modern Bootstrap theming
-- **[ggplot2](https://ggplot2.tidyverse.org/)** + **[plotly](https://plotly.com/r/)** — interactive visualizations
-- **[DT](https://rstudio.github.io/DT/)** — interactive data tables
-- **[Posit Connect Cloud](https://connect.posit.cloud/)** — hosting & deployment
+## 💡 Suggested Improvements
 
-## 📁 Repository Structure
+Based on your current implementation, here are a few ideas to make VeloSight even more powerful:
 
-```
-VeloSight/
-├── app.R              # Main Shiny application (UI + server logic)
-├── manifest.json       # Dependency manifest for Posit Connect Cloud
-├── renv.lock            # Package version lockfile
-├── LICENSE
-├── README.md
-└── project.Rproj
-```
+| Area | Suggestion | Why It Helps |
+| :--- | :--- | :--- |
+| **⚡ Performance** | For very large CSV files (> 50 MB), consider adding a "Row Limit" option (e.g., load first 10,000 rows) to prevent browser crashes. | Keeps the app responsive for all users. |
+| **📊 More Plot Types** | Add options for **bar charts**, **histograms**, and **boxplots** in addition to scatter plots. | Covers a wider range of analytical needs. |
+| **🔗 Advanced Filtering** | Allow **text search** filters (e.g., "contains 'Smith'") for high-cardinality text columns. | Improves data exploration for datasets with many unique text values. |
+| **📁 Multiple File Support** | Enable uploading **Excel (.xlsx)** and **JSON** files in addition to CSV. | Increases the app's utility for users with diverse data sources. |
+| **💾 Save Filter State** | Add a "Bookmark" or "Save State" feature to share a specific filtered view via URL. | Makes collaboration and reporting easier. |
+| **🎨 Customizable Themes** | Allow users to switch between light/dark themes. | Improves user comfort and accessibility. |
+| **📤 Export Filtered Data** | Add a dedicated "Download Filtered Data" button to save the currently filtered dataset. | Currently, only the original file can be downloaded, limiting the utility of the filters. |
 
-## 📚 Citation
+---
 
-If you use VeloSight in your research or work, please cite it as follows:
+## 📊 Technology Stack
 
-> _[Author Name]._ (2026). **VeloSight: An Interactive R Shiny Data Dashboard** [Software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | R Shiny, `bslib` (Bootstrap 5) |
+| **Backend** | R |
+| **Data Manipulation** | Base R |
+| **Visualization** | `ggplot2`, `plotly` |
+| **Data Table** | `DT` (DataTables) |
+| **Icons** | `bsicons` |
+| **Deployment** | Posit Connect, shinyapps.io |
 
-- **ORCID:** [https://orcid.org/0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000) <!-- Replace with your ORCID iD -->
-- **Zenodo Archive:** [https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX) <!-- Replace with your Zenodo DOI -->
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mun9uk-ship-it/VeloSight/issues).
+---
 
 ## 📄 License
 
-This project is licensed under the terms described in the [LICENSE](LICENSE) file.
+This project is open-source and available under the **MIT License**.
 
 ---
 
-# 🇸🇦 العربية
+## 🙏 Acknowledgements
 
-<div dir="rtl">
+- Built with ❤️ using the [R](https://www.r-project.org/) ecosystem and [Shiny](https://shiny.rstudio.com/).
+- Interactive visualizations powered by [Plotly](https://plotly.com/r/).
 
-## 📖 نظرة عامة
+---
 
-**«فيلوسايت»** هي لوحة بيانات تفاعلية حديثة مبنية باستخدام **«آر شايني»**. تتيح للمستخدمين استكشاف بيانات «إم-تي-كارز» الكلاسيكية من خلال فلاتر ديناميكية، ومخطط تشتت تفاعلي مباشر، وبطاقات ملخص للمؤشرات الرئيسية، وجدول بيانات قابل للبحث — كل ذلك في تصميم داكن أنيق مدعوم بمكتبة «بي-إس-ليب».
+## 📧 Contact & Connect
 
-صُمم هذا المشروع كقالب خفيف وسهل النشر لأي شخص يبدأ في بناء لوحات بيانات تفاعلية بلغة «آر» على منصة **«بوزيت كونكت كلاود»**.
+- **Author:** Muneer Ahmed
+- **GitHub:** [mun9uk-ship-it](https://github.com/mun9uk-ship-it)
+- **Email:** [mun9uk@gmail.com](mailto:mun9uk@gmail.com)
+- **ORCID:** [0000-0002-1825-0097](https://orcid.org/0000-0002-1825-0097)
 
-## ✨ المميزات
+---
+
+**🚀 Explore, understand, and share insights — VeloSight makes it effortless.**
+
+---
+
+---
+
+# 🚀 "فيلوسايت" — المستكشف التفاعلي الشامل للبيانات
+
+[![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)](https://www.r-project.org/)
+[![Shiny](https://img.shields.io/badge/Shiny-1.8.0-brightgreen?logo=r)](https://shiny.rstudio.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)](https://github.com/mun9uk-ship-it/VeloSight)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?logo=posit)](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)
+
+> **حمّل، استكشف، وصوّر أي مجموعة بيانات فوراً — دون الحاجة إلى كتابة أي "كود".**  
+> *مُطوّر باستخدام "آر شايني" للباحثين والمحللين وعشاق البيانات.*
+
+---
+
+## 🔭 ما هو "فيلوسايت"؟
+
+**"فيلوسايت"** هو تطبيق ويب تفاعلي يحوّل ملفات "سي إس في" الخام إلى رؤى قابلة للتنفيذ. يمكّنك من:
+
+- 📤 **تحميل** أي ملف "سي إس في" أو استكشاف مجموعة البيانات التجريبية المدمجة (`mtcars`) فوراً.
+- 🔍 **فحص** جودة البيانات من خلال تقرير مفصّل لكل عمود.
+- 🧹 **تنظيف** القيم المفقودة بنقرة واحدة (حذف الصفوف أو تعبئتها بالمتوسط/المنوال).
+- 🎚️ **تصفية** البيانات ديناميكياً باستخدام أشرطة تمرير ومربعات اختيار بديهية.
+- 📊 **تصوّر** العلاقات من خلال "مخطط مبعثر" تفاعلي مع خاصية التمرير.
+- 📋 **تصدير** مجموعة البيانات الأصلية أو المنظفة بضغطة زر.
+
+> مثالي لمحللي البيانات والطلاب والمحترفين الذين يرغبون في فهم بياناتهم بسرعة وبدون كتابة "كود".
+
+---
+
+## ✨ الميزات الرئيسية
 
 | الميزة | الوصف |
-|---|---|
-| 🎚️ **فلاتر ديناميكية** | فلترة السيارات حسب نطاق القوة الحصانية وعدد الأسطوانات |
-| 📊 **مخطط تفاعلي** | مخطط تشتت تفاعلي (عبر مكتبة «بلوتلي») لاستهلاك الوقود مقابل الوزن |
-| 🚗 **بطاقات المؤشرات** | تحديث فوري لـ «إجمالي السيارات المختارة» و«متوسط القوة الحصانية» |
-| 📋 **جدول بيانات** | جدول قابل للفرز والتصفح (عبر مكتبة «دي-تي») للبيانات المفلترة |
-| 🌙 **واجهة داكنة حديثة** | مبني بثيم «داركلي» من مكتبة «بي-إس-ليب» |
+| :--- | :--- |
+| 📂 **تحميل فوري وعينة تجريبية** | حمّل ملف "سي إس في" أو ابدأ فوراً باستكشاف بيانات `mtcars` المدمجة. |
+| 🧹 **تنظيف ذكي** | تعامل مع القيم المفقودة بحذف الصفوف أو بتعبئة القيم العددية (بالمتوسط) والنصية (بالمنوال). |
+| 🎚️ **تصفية ديناميكية** | صفّف بياناتك باستخدام أشرطة تمرير للأعداد ومربعات اختيار للفئات. |
+| 📊 **مخطط تفاعلي** | أنشئ "مخطط مبعثر" تفاعلياً بالكامل. مرّر فوق النقاط للاطلاع على التفاصيل، ولوّن حسب أي عمود فئوي. |
+| 📋 **جدول بيانات** | اعرض، ابحث، وصفح خلال بياناتك المُصفاة. |
+| 🔍 **تقرير الجودة** | احصل على تقرير شامل بأنواع الأعمدة، والقيم المفقودة، والقيم الفريدة، والصفوف المكررة. |
+| 📥 **تصدير** | حمّل مجموعة البيانات الأصلية أو المنظفة/المُصفاة كملف "سي إس في". |
 
-## 🔴 تجربة مباشرة
+---
 
-جرّب «فيلوسايت» مباشرة من متصفحك — بدون أي تثبيت:
+## 🖥️ كيفية استخدام "فيلوسايت"
 
-### 👉 **[افتح فيلوسايت](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)**
+### **جرب العرض الحي**
 
-## 🖥️ دليل الاستخدام
+أسرع طريقة لتجربة "فيلوسايت" هي زيارة النسخة المنشورة:
 
-1. افتح [رابط العرض المباشر](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/) أعلاه.
-2. استخدم **أدوات التحكم في الشريط الجانبي** على اليسار من أجل:
-   - سحب شريط **نطاق القوة الحصانية** لفلترة السيارات.
-   - تحديد أو إلغاء تحديد خانات **الأسطوانات** (٤، ٦، ٨) لإدراج أو استبعاد أنواع السيارات.
-3. راقب **بطاقات المؤشرات** أعلى الصفحة وهي تتحدث فوريًا حسب الفلترة.
-4. **مرّر الفأرة فوق النقاط** في المخطط لرؤية تفاصيل كل سيارة.
-5. استخدم **جدول البيانات** على اليمين لفرز الأعمدة أو التنقل بين الصفحات.
+🔗 **[العرض الحي لفيلوسايت](https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/)**
 
-## ⚙️ دليل التشغيل محليًا
+بمجرد وصولك إلى هناك، يمكنك:
 
-### المتطلبات
-- لغة «آر» [(رابط التحميل)](https://cran.r-project.org/) — الإصدار ٤.٣ أو أحدث
-- برنامج «آر-ستوديو» [(رابط التحميل)](https://posit.co/download/rstudio-desktop/) (موصى به)، أو منصة «بوزيت كلاود» [(رابط)](https://posit.cloud/) التي تعمل من المتصفح مباشرة بدون تثبيت
+1.  **استكشاف العينة التجريبية**: يُحمّل التطبيق مع مجموعة بيانات `mtcars`. جرب الفلاتر والرسوم البيانية وعلامات التبويب لترى كيف يعمل.
+2.  **تحميل ملفك الخاص**: انقر على زر **"تحميل ملف سي إس في"** في الشريط الجانبي. سيتحول التطبيق فوراً إلى بياناتك.
+3.  **تنظيف بياناتك**: استخدم خيارات **"تنظيف البيانات"** للتعامل مع القيم المفقودة:
+    - *الإبقاء كما هي*: لا تفعل شيئاً.
+    - *حذف الصفوف التي تحتوي على قيم مفقودة*: حذف أي صف يحتوي على `NA`.
+    - *تعبئة القيم العددية بالمتوسط والنصية بالمنوال*: تعبئة القيم المفقودة تلقائياً.
+4.  **تطبيق الفلاتر**: استخدم قسم **"الفلاتر الديناميكية"** من أجل:
+    - سحب أشرطة التمرير لتصفية الأعمدة الرقمية (مثال: عرض الصفوف التي يكون فيها `mpg` بين 15 و 25 فقط).
+    - تحديد مربعات الاختيار لتصفية الأعمدة الفئوية (مثال: عرض الصفوف التي يكون فيها `cyl` يساوي 4 أو 6 فقط).
+5.  **التصوّر**: انتقل إلى علامة التبويب **"لوحة التحكم"**:
+    - اختر أعمدة **"المحور السيني"** و **"المحور الصادي"** و **"التلوين حسب"** من القوائم المنسدلة.
+    - مرّر فوق النقاط على "المخطط التفاعلي" لرؤية التفاصيل.
+    - تصفّح **"جدول البيانات"** أسفل المخطط.
+6.  **استكشاف الجودة**: انتقل إلى علامة التبويب **"تقرير جودة البيانات"** لترى:
+    - أنواع الأعمدة، وعدد القيم المفقودة، والقيم الفريدة.
+    - عدد الصفوف المكررة.
+    - إحصائيات موجزة (المتوسط، الوسيط، القيم الدنيا والعليا، إلخ).
+7.  **التصدير**: استخدم زر **"تحميل الملف الأصلي"** في الشريط الجانبي لحفظ مجموعة البيانات غير المعدلة، أو انسخ البيانات مباشرة من الجدول.
 
-### الخطوات
+### **التشغيل المحلي (للمطورين)**
 
-```bash
-# الخطوة الأولى: استنساخ المستودع
-git clone https://github.com/mun9uk-ship-it/VeloSight.git
-cd VeloSight
-```
+1.  **استنساخ المستودع:**
+    ```bash
+    git clone https://github.com/mun9uk-ship-it/VeloSight.git
+    cd VeloSight
+    ```
 
-```r
-# الخطوة الثانية: تثبيت الحزم المطلوبة
-install.packages(c("shiny", "bslib", "ggplot2", "plotly", "DT", "bsicons"))
+2.  **تثبيت الحزم المطلوبة في "آر":**
+    ```r
+    install.packages(c("shiny", "bslib", "ggplot2", "plotly", "DT", "bsicons"))
+    ```
 
-# الخطوة الثالثة: تشغيل التطبيق
-shiny::runApp()
-```
+3.  **تشغيل التطبيق:**
+    ```r
+    shiny::runApp("app.R")
+    ```
 
-سيفتح التطبيق تلقائيًا في متصفحك الافتراضي على عنوان الخادم المحلي الذي يظهر في الطرفية.
+---
 
-### 🚀 نشر نسختك الخاصة على «بوزيت كونكت كلاود»
+## 🌐 فيم يمكنك استخدام "فيلوسايت"؟
 
-```r
-install.packages("rsconnect")
-rsconnect::writeManifest()
-```
+"فيلوسايت" أداة متعددة الاستخدامات لأي سيناريو تحتاج فيه إلى فهم مجموعة بيانات بسرعة:
 
-بعد ذلك، ارفع ملف بيانات الاعتماديات الناتج إلى مستودعك على «جيت-هَب»، واربطه عبر: بوزيت كونكت كلاود ← نشر ← من جيت-هَب.
+| حالة الاستخدام | مثال |
+| :--- | :--- |
+| **🧪 البحث الأكاديمي** | تحليل البيانات الاستكشافي لمشاريع الطلاب أو الأوراق البحثية. |
+| **📊 تحليل الأعمال** | تحميل بيانات المبيعات أو العملاء أو العمليات لاكتشاف الاتجاهات والقيم المتطرفة. |
+| **📈 صحافة البيانات** | استكشاف سريع لمجموعات البيانات العامة للعثور على قصص مثيرة للاهتمام. |
+| **🎓 التعليم والتعلم** | شرح مفاهيم تنظيف البيانات وتصفيتها وتصورها في الفصول الدراسية. |
+| **🔍 مشاريع شخصية** | تحليل بياناتك الخاصة (مثل سجلات اللياقة البدنية، تتبع الميزانية) دون كتابة سطر واحد من "الكود". |
+| **💼 عروض العملاء** | استخدام لوحة التحكم التفاعلية لعرض رؤى البيانات على أصحاب المصلحة أثناء الاجتماعات. |
 
-## 🛠️ التقنيات المستخدمة
+---
 
-- **لغة «آر»** [(رابط)](https://www.r-project.org/) — لغة البرمجة الأساسية
-- **«شايني»** [(رابط)](https://shiny.posit.co/) — إطار عمل الويب التفاعلي
-- **«بي-إس-ليب»** [(رابط)](https://rstudio.github.io/bslib/) — تصميم واجهات حديث
-- **«جي-جي-بلوت»** [(رابط)](https://ggplot2.tidyverse.org/) و**«بلوتلي»** [(رابط)](https://plotly.com/r/) — تصورات بيانات تفاعلية
-- **«دي-تي»** [(رابط)](https://rstudio.github.io/DT/) — جداول بيانات تفاعلية
-- **«بوزيت كونكت كلاود»** [(رابط)](https://connect.posit.cloud/) — الاستضافة والنشر
+## 💡 تحسينات مقترحة
 
-## 📁 هيكل المستودع
+بناءً على التنفيذ الحالي، إليك بعض الأفكار لجعل "فيلوسايت" أكثر قوة:
 
-```
-VeloSight/
-├── app.R              # التطبيق الرئيسي (الواجهة ومنطق الخادم)
-├── manifest.json       # ملف الاعتماديات لمنصة النشر
-├── renv.lock             # ملف تثبيت إصدارات الحزم
-├── LICENSE
-├── README.md
-└── project.Rproj
-```
+| المجال | الاقتراح | لماذا هو مفيد؟ |
+| :--- | :--- | :--- |
+| **⚡ الأداء** | لملفات "سي إس في" الكبيرة جداً (> 50 ميجابايت)، فكر في إضافة خيار "حد الصفوف" (مثل تحميل أول 10000 صف فقط) لمنع تعطل المتصفح. | يحافظ على استجابة التطبيق لجميع المستخدمين. |
+| **📊 أنواع مخططات إضافية** | أضف خيارات **"المخططات العمودية"** و **"المدرجات التكرارية"** و **"المخططات الصندوقية"** بالإضافة إلى "المخطط المبعثر". | يغطي نطاقاً أوسع من الاحتياجات التحليلية. |
+| **🔗 تصفية متقدمة** | سمح بـ **"البحث النصي"** (مثال: "يحتوي على 'سميث'") للأعمدة النصية عالية التنوع. | يحسّن استكشاف البيانات لمجموعات البيانات التي تحتوي على العديد من القيم النصية الفريدة. |
+| **📁 دعم أنواع ملفات متعددة** | أضف إمكانية تحميل ملفات **"إكسل" (xlsx.)** و **"جيسون" (JSON)** بالإضافة إلى "سي إس في". | يزيد من فائدة التطبيق للمستخدمين الذين لديهم مصادر بيانات متنوعة. |
+| **💾 حفظ حالة الفلتر** | أضف ميزة "إشارة مرجعية" أو "حفظ الحالة" لمشاركة عرض مُصفى معين عبر رابط. | يسهل التعاون وإعداد التقارير. |
+| **🎨 سمات قابلة للتخصيص** | سمح للمستخدمين بالتبديل بين السمات الفاتحة والداكنة. | يحسّن راحة المستخدم وإمكانية الوصول. |
+| **📤 تصدير البيانات المُصفاة** | أضف زراً مخصصاً **"تحميل البيانات المُصفاة"** لحفظ مجموعة البيانات المُصفاة حالياً. | حالياً، يمكن تحميل الملف الأصلي فقط، مما يحد من فائدة الفلاتر. |
 
-## 📚 الاستشهاد المرجعي
+---
 
-إذا استخدمت «فيلوسايت» في بحثك أو عملك، يُرجى الاستشهاد به كالتالي:
+## 📊 "ستاك" التقنيات المستخدمة
 
-> _[اسم المؤلف]._ (٢٠٢٦). **فيلوسايت: لوحة بيانات تفاعلية بلغة آر** [برمجية]. زينودو. https://doi.org/10.5281/zenodo.XXXXXXX
+| الطبقة | التقنية |
+| :--- | :--- |
+| **الواجهة الأمامية** | "آر شايني"، `bslib` ("بوستراب 5") |
+| **الواجهة الخلفية** | "آر" |
+| **معالجة البيانات** | "آر" الأساسية |
+| **التصوّر** | `ggplot2`، `plotly` |
+| **جدول البيانات** | `DT` ("داتا تيبلز") |
+| **الأيقونات** | `bsicons` |
+| **النشر** | "بوزيت كونكت"، "شايني أبس.آي أو" |
 
-- **مُعرّف الباحث (أوركيد):** [https://orcid.org/0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000) — _استبدله برقمك الخاص_
-- **أرشيف زينودو:** [https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX) — _استبدله برابطك الخاص_
-
-## 🤝 المساهمة
-
-المساهمات، الملاحظات، وطلبات الميزات الجديدة مرحّب بها دائمًا! يمكنك مراجعة صفحة المشكلات على المستودع: [الرابط هنا](https://github.com/mun9uk-ship-it/VeloSight/issues).
+---
 
 ## 📄 الترخيص
 
-هذا المشروع مرخّص وفق الشروط الموضحة في ملف الترخيص: [الرابط هنا](LICENSE).
-
-</div>
+هذا المشروع مفتوح المصدر ومتاح بموجب **"رخصة إم آي تي"**.
 
 ---
 
-<div align="center">
+## 🙏 الشكر والتقدير
 
-Made with ❤️ using R Shiny • Deployed on Posit Connect Cloud
+- مُطوّر بحب ❤️ باستخدام نظام "آر" البيئي و [Shiny](https://shiny.rstudio.com/).
+- التصورات التفاعلية مدعومة من [Plotly](https://plotly.com/r/).
 
-</div>
+---
+
+## 📧 التواصل
+
+- **المؤلف:** منير أحمد
+- **"جيت هاب":** [mun9uk-ship-it](https://github.com/mun9uk-ship-it)
+- **البريد الإلكتروني:** [mun9uk@gmail.com](mailto:mun9uk@gmail.com)
+- **"أورسيد":** [0000-0002-1825-0097](https://orcid.org/0000-0002-1825-0097)
+
+---
+
+**🚀 استكشف، افهم، وشارك الرؤى — "فيلوسايت" يجعله أمراً سهلاً.**
