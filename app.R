@@ -1,6 +1,6 @@
 # ==============================================================================
 # File Name: app.R
-# Application: DataScope — Universal Interactive Data Explorer
+# Application: VeloSight — Universal Interactive Data Explorer
 # Description: Upload any CSV, inspect data quality, optionally clean missing
 #              values, and explore the result through dynamic filters, an
 #              interactive plot, and a searchable data table. Falls back to
@@ -61,7 +61,7 @@ clean_missing_data <- function(df, strategy) {
 # ------------------------------------------------------------------------------
 ui <- page_sidebar(
   theme = bs_theme(bootswatch = "darkly"),
-  title = "DataScope — Universal Data Explorer 🚀",
+  title = "VeloSight — Universal Interactive Data Explorer",
 
   sidebar = sidebar(
     title = "Data Controls",
