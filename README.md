@@ -189,20 +189,20 @@ The app now runs on **two independent platforms** — giving us a real-world ben
               │ Shiny Server (Port 3838)│
               └────────────────────────┘
 ```
-Pipeline highlights:
+## Pipeline highlights:
 
-    🧪 Test — automated tests on every push
+  🧪 Test — automated tests on every push
 
-    🏗️ Build — containerized build artifacts
+  🏗️ Build — containerized build artifacts
 
-    🚀 Deploy to Dev — automatic deployment to staging
+  🚀 Deploy to Dev — automatic deployment to staging
 
-    ✋ Manual Approval — gated promotion to production
+   ✋ Manual Approval — gated promotion to production
 
-    🌐 Deploy to Prod — served on Plesk at app.velosights.com via Shiny Server (port 3838)
+   🌐 Deploy to Prod — served on Plesk at app.velosights.com via Shiny Server (port 3838)
 
 <div align="center">
----
+
 
 ### 📬 Let's Connect & Collaborate
 
@@ -217,8 +217,9 @@ Pipeline highlights:
 
 ---
 </div>
-🖥️ How to Use VeloSight
-🔗 Try the Live Demo
+## 🖥️ How to Use VeloSight
+
+🔗 Try the Live Demo:
 
 👉 Posit Cloud | Live VeloSight Demo: https://01a011ac-1b85-453e-2fc7-be234bc8489a.share.connect.posit.cloud/
 
@@ -262,7 +263,7 @@ Once there, you can:
 
 📥 Export — Use the "Download Original File" button in the sidebar to save the untouched dataset, or copy data directly from the table.
 
-💻 Run Locally (for Developers)
+## 💻 Run Locally (for Developers)
 
 1️⃣ Clone the repository:
 ```bash
