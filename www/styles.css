@@ -1,0 +1,29 @@
+/* ============================================
+   VeloSight — UI Fixes
+   Fix dropdown z-index issue
+   ============================================ */
+
+.selectize-dropdown,
+.selectize-dropdown-content,
+.selectize-control.single .selectize-input,
+.selectize-input.dropdown-active {
+    z-index: 9999 !important;
+    position: relative;
+}
+
+.plotly.html-widget,
+.js-plotly-plot,
+.shiny-plot-output {
+    z-index: 1 !important;
+    position: relative;
+}
+
+.card,
+.bslib-card,
+.card-body {
+    overflow: visible !important;
+}
+
+.dataTables_wrapper {
+    z-index: 1 !important;
+}
