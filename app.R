@@ -61,6 +61,9 @@ clean_missing_data <- function(df, strategy) {
 # ------------------------------------------------------------------------------
 ui <- page_sidebar(
   theme = bs_theme(bootswatch = "darkly"),
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+  ),  
   title = "VeloSight — Universal Interactive Data Explorer",
 
   sidebar = sidebar(
